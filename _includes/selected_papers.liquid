@@ -1,3 +1,19 @@
-<div class="publications">
-  {% bibliography --group_by none --query @*[selected=true]* %}
+<div class="selected-publications">
+{% assign pubs = site.publications | where: "selected", true | sort: "year" | reverse %}
+{% for pub in pubs %}
+<div class="selected-publication-item" style="margin-bottom: 1.5em;">
+  <p style="margin: 0; font-weight: bold;">
+    {{ pub.title }} {% if pub.year %}({{ pub.year }}){% endif %}
+  </p>
+  <p style="margin: 0; font-size: 0.9em; color: #555;">
+    {{ pub.authors | join: ", " }}
+  </p>
+  <p class="pub-links" style="margin: 0; font-size: 0.9em;">
+    {% if pub.pdf %}<a href="{{ pub.pdf }}" target="_blank">PDF</a>{% endif %}
+    {% if pub.code %} | <a href="{{ pub.code }}" target="_blank">Code</a>{% endif %}
+    {% if pub.talk %} | <a href="{{ pub.talk }}" target="_blank">Talk</a>{% endif %}
+    {% if pub.poster %} | <a href="{{ pub.poster }}" target="_blank">Poster</a>{% endif %}
+  </p>
+</div>
+{% endfor %}
 </div>

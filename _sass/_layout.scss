@@ -34,8 +34,13 @@ body.sticky-bottom-footer {
 // Profile
 .profile {
   img {
-    width: 100%;
-  }
+  width: auto;               // largeur automatique selon le conteneur
+  height: auto;              // hauteur automatique
+  max-width: 100%;           // ne dépasse pas le conteneur parent
+  aspect-ratio: 817 / 851;  // aspect ratio exact de ton image
+  display: block;
+  margin: 0 auto;            // centre l'image horizontalement
+}
 }
 
 // TODO: redefine content layout.
@@ -44,7 +49,43 @@ body.sticky-bottom-footer {
  * Publications
  ******************************************************************************/
 
-// TODO: redefine publications layout.
+.publication-card {
+  background-color: var(--global-card-bg-color);
+  color: var(--global-text-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+
+  a {
+    color: var(--global-theme-color);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--global-hover-color);
+    }
+  }
+}
+
+
+.publication-card.selected {
+  border-color: var(--global-theme-color);
+  background-color: var(--global-footer-bg-color);
+}
+
+.pub-selected-badge {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: white;
+  background: var(--global-theme-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
 
 /*****************************************************************************
 * Projects

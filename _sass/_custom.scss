@@ -1,0 +1,82 @@
+.publications-grid {
+  display: grid;
+  grid-template-columns: 1fr; // une seule colonne pour les publications longues
+  gap: 1rem;
+}
+
+.publication-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 6px;
+  padding: 0.75rem 1rem; // un peu moins de padding global
+  background-color: var(--global-card-bg-color);
+  color: var(--global-text-color);
+  transition: background-color 0.3s, border-color 0.3s;
+
+  h3 {
+    font-size: 1.3rem;        // réduit la taille du titre
+    font-weight: 500;
+    margin: 0 0 0.5rem 0;  // espace sous le titre vers les auteurs
+    color: var(--global-text-color);
+  }
+
+  .publication-authors {
+    font-size: 0.875rem;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.5rem;  // espace après les auteurs
+  }
+
+  p, .pub-links {
+    margin-top: 0;           // réduits les espaces après
+    margin-bottom: 0.25rem;
+  }
+
+  .pub-links {
+    a {
+      margin-right: 0.5rem;
+      text-decoration: none;
+      font-weight: 500;
+      color: var(--global-theme-color);
+
+      &:hover {
+        color: var(--global-hover-color);
+      }
+    }
+  }
+}
+
+.talk-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    margin-bottom: 1rem;
+  }
+
+  .talk-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.3rem;
+  }
+
+  .talk-slide {
+    flex-shrink: 0; // empêche le lien de se réduire
+  }
+
+  .talk-location {
+    margin-left: 0.2rem;
+    color: var(--global-text-color-light);
+  }
+
+  a {
+    color: var(--global-theme-color);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

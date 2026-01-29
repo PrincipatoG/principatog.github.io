@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2025-12-05 
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+I attended the 2025 [ECAS-SFDS](https://ecas.fenstats.eu/) winter school [Towards Reliable Machine Learning](https://ecas.fenstats.eu/). Thanks to all the speakers for the great courses!

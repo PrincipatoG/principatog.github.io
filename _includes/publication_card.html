@@ -1,0 +1,28 @@
+<div class="publication-card">
+  <h3 class="pub-title">{{ pub.title }}</h3>
+
+  <p class="pub-authors">
+    <strong>Authors:</strong> {{ pub.authors | join: ", " }}
+  </p>
+
+  <p class="pub-meta">
+    <strong>Year:</strong> {{ pub.year }}
+    {% if pub.venue %}
+      · <strong>Venue:</strong> {{ pub.venue }}
+    {% endif %}
+  </p>
+
+  {% if pub.keywords %}
+  <p class="pub-keywords">
+    <strong>Keywords:</strong>
+    {{ pub.keywords | join: ", " }}
+  </p>
+  {% endif %}
+
+  <p class="pub-links">
+    {% if pub.pdf %}<a href="{{ pub.pdf }}" target="_blank">PDF</a>{% endif %}
+    {% if pub.code %}<a href="{{ pub.code }}" target="_blank">Code</a>{% endif %}
+    {% if pub.talk %}<a href="{{ pub.talk }}" target="_blank">Talk</a>{% endif %}
+    {% if pub.poster %}<a href="{{ pub.poster }}" target="_blank">Poster</a>{% endif %}
+  </p>
+</div>

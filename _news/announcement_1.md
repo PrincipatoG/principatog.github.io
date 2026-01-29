@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2025-12-16 
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+I presented [Conformal Prediction for Hierarchical Data](https://arxiv.org/pdf/2411.13479) at the [LIPS Seminar](https://centreborelli.ens-paris-saclay.fr/en/SMLMDA) in Centre Borelli
