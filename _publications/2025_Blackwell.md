@@ -6,6 +6,6 @@ authors:
 year: 2025
 type: preprint
 keywords: [Conformal prediction beyond exchangeability, Online learning, Blackwell’s approachability]
-pdf: "/assets/pdf/Blackwell.pdf"
+pdf: "/assets/pdf/Blackwell_new.pdf"
 selected: true
 ---
