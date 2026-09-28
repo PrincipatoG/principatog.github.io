@@ -1,3 +1,5 @@
+{% assign root = "https://www.imo.universite-paris-saclay.fr/~guillaume.principato" %}
+
 <!-- _layouts/publications.html -->
 {% include header.html %}
 <div class="container">
@@ -10,10 +12,10 @@
       <p><strong>Authors:</strong> {{ pub.authors | join: ", " }}</p>
       <p><strong>Venue:</strong> {{ pub.venue }}, {{ pub.year }}</p>
       <p class="pub-links">
-        {% if pub.pdf %}<a href="{{ pub.pdf }}" target="_blank">PDF</a>{% endif %}
+        {% if pub.pdf %}<a href="{{ root }}{{ pub.pdf }}" target="_blank">PDF</a>{% endif %}
         {% if pub.code %}<a href="{{ pub.code }}" target="_blank">Code</a>{% endif %}
-        {% if pub.talk %}<a href="{{ pub.talk }}" target="_blank">Talk</a>{% endif %}
-        {% if pub.poster %}<a href="{{ pub.poster }}" target="_blank">Poster</a>{% endif %}
+        {% if pub.talk %}<a href="{{ root }}{{ pub.talk }}" target="_blank">Talk</a>{% endif %}
+        {% if pub.poster %}<a href="{{ root }}{{ pub.poster }}" target="_blank">Poster</a>{% endif %}
       </p>
     </div>
     {% endfor %}

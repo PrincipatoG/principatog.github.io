@@ -1,3 +1,5 @@
+{% assign root = "https://www.imo.universite-paris-saclay.fr/~guillaume.principato" %}
+
 <div class="selected-publications">
 {% assign pubs = site.publications | where: "selected", true | sort: "year" | reverse %}
 {% for pub in pubs %}
@@ -9,10 +11,10 @@
     {{ pub.authors | join: ", " }}
   </p>
   <p class="pub-links" style="margin: 0; font-size: 0.9em;">
-    {% if pub.pdf %}<a href="{{ pub.pdf }}" target="_blank">PDF</a>{% endif %}
+    {% if pub.pdf %}<a href="{{ root }}{{ pub.pdf }}" target="_blank">PDF</a>{% endif %}
     {% if pub.code %} | <a href="{{ pub.code }}" target="_blank">Code</a>{% endif %}
-    {% if pub.talk %} | <a href="{{ pub.talk }}" target="_blank">Talk</a>{% endif %}
-    {% if pub.poster %} | <a href="{{ pub.poster }}" target="_blank">Poster</a>{% endif %}
+    {% if pub.talk %} | <a href="{{ root }}{{ pub.talk }}" target="_blank">Talk</a>{% endif %}
+    {% if pub.poster %} | <a href="{{ root }}{{ pub.poster }}" target="_blank">Poster</a>{% endif %}
   </p>
 </div>
 {% endfor %}

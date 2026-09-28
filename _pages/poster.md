@@ -4,18 +4,19 @@ layout: page
 permalink: /posters/
 
 ---
+
+{% assign root = "https://www.imo.universite-paris-saclay.fr/~guillaume.principato/" %}
+
 <ul class="talk-list">
-  
-    <li>
+  <li>
     <div class="talk-line">
       <span><em>Conformal Prediction for Hierarchical Data</em> — September 12th, 2025</span>
-      <span class="talk-slide"><a href="assets/talks/COPA_2025.pdf">Poster</a></span>
+      <span class="talk-slide"><a href="{{ root }}assets/talks/COPA_2025.pdf">Poster</a></span>
     </div>
     <div class="talk-location">
       <a href='https://copa-conference.com/copa2025/' target='_blank'>COPA 2025</a>, Royal Holloway University of London, Egham, UK </div>
   </li>
-  
-    <li>
+  <li>
     <div class="talk-line">
       <span><em>Conformal Prediction for Hierarchical Data</em> — December 18th, 2024</span>
       <span class="talk-slide"></span>

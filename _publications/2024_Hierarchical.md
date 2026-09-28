@@ -7,8 +7,9 @@ authors:
   - Yannig Goude
   - Bachir Hamrouche
   - Jean-Michel Poggi
-year: 2024
-type: preprint 
+venue: "Transactions on Machine Learning Research"
+year: 2026
+type: publication 
 keywords: [Conformal prediction, Forecast Reconciliation]
 pdf: "/assets/pdf/Hierarchical.pdf"           
 code: "https://github.com/PrincipatoG/Conformal-Prediction-for-Hierarchical-Data"  

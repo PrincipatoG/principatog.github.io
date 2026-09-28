@@ -1,5 +1,5 @@
 ---
-title: "Blackwell’s Approachability for Sequential Conformal Inference"
+title: "Adaptive Conformal Inference Through the Lens of Blackwell Approachability"
 authors:
   - Guillaume Principato
   - Gilles Stoltz
